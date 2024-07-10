@@ -1,0 +1,490 @@
+/* Top Buttons */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+.main-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-widht : 1200px)  {
+  .main-container {
+    width: 90px;
+  }
+}
+
+/* Buttons */
+.btn {
+  padding:  1rem 1.5rem;
+  background: white;
+  border: 1.5px solid var(--BorderColor);
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+}
+
+/* Logo and Navigation Menu */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2px 0;
+  
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.logo a {
+  color: var(--PrimaryTextColor);
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: #F8DE22;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #f7f7f7;
+  /*background-image: url("https://images.unsplash.com/photo-1586076100131-32505c71d0d2?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");*/
+  background-color: #f7f7f7;
+  /*background-image: url("https://assets-a1.kompasiana.com/items/album/2023/05/22/muatan-listrik-dan-medan-listrik-646a53804addee16c30640c2.jpg?t=o&v=770");*/
+
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* Header Styles background: linear-gradient(135deg,#A9BCD0, #D8DBE2 );*/
+
+header {
+ /* background-image: url("https://asset-a.grid.id/crop/0x0:0x0/x/photo/2023/12/28/a-majestic-depiction-of-zeus-the-20231228033040.jpeg");
+   /* purple gradient */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://asset-a.grid.id/crop/0x0:0x0/x/photo/2023/12/28/a-majestic-depiction-of-zeus-the-20231228033040.jpeg) no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+header h1 {
+  font-size: 4rem;
+  color: white; /* white font color */
+  animation: fadeInDown 1s;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-bottom: 150px;
+  padding-top: 100px;
+}
+
+header h1:span{
+  text-align: left;
+}
+
+header h2 {
+  text-align: justify;
+  margin-left: 60px;
+  font-size: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #6c757d; /* white font color */
+  animation: fadeInDown 1.2s;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.team-members {
+  text-align: justify;
+  margin-left: 70px;
+  color: #373F51;
+}
+.group-name {
+  text-align: justify;
+  margin-left: 80px;
+  color: #4A4E69;
+}
+
+.group-container {
+  position: relative;
+}
+
+.team-members {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 10px;
+  
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.group-container:hover .team-members {
+  
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* This will center the links horizontally */
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 0 auto; /* Add this to center the ul element */
+}
+
+/* Main Content Styles */
+
+main {
+  flex: 1;
+  padding: 4rem;
+   /* darker white background */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 4rem auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 10px;
+  animation: fadeInUp 1s;
+  
+}
+
+section {
+  margin-bottom: 4rem;
+  padding: 3rem;
+  border-left: 10px solid #4A4E69; /* purple border color */
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+section:hover {
+  
+  background: #f0f4f8;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+h2 {
+  color: #373F51; /* purple title color */
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  transition: color 0.3s ease;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section:hover h2 {
+  color: #C9ADA7;
+}
+
+p {
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #666;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Text Box Styles */
+
+.text-box {
+  background: #f9f9f9;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 4rem;
+  width: 90%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.text-box ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.text-box li {
+  margin: 0 20px;
+}
+
+.text-box a {
+  color: #333;
+  text-decoration: none;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.text-box a:hover {
+  color: #C9ADA7;
+  border-color: #C9ADA7;
+}
+
+
+/* Footer Styles */
+
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 3rem 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+footer p {
+  font-size: 1.6rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styles for the buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem; /* Add space between buttons */
+}
+
+.button {
+background-color: #4A4E69; /* Purple color */
+color: white;
+padding: 1rem 2rem;
+border: none;
+border-radius: 5px;
+font-size: 1.2rem;
+cursor: pointer;
+transition: background-color 0.3s ease;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+background-color: #C9ADA7; /* Lighter purple on hover */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+.top-bar {
+background-color: #333;
+color: #fff;
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.top-bar a {
+color: #fff;
+text-decoration: none;
+}
+.top-bar a:hover {
+color: #C9ADA7;
+}
+.hero {
+font-family: "Literata";
+letter-spacing: 5px;
+background-image: url('electric-field.jpeg');
+background-size: cover;
+height: 70vh;
+display: flex;
+justify-content: center;
+align-items: center;
+color: #fff;
+}
+.hero h1 {
+font-size: 48px;
+font-weight: bold;
+}
+.team-intro {
+padding: 20px;
+}
+.team-intro ul {
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+.team-intro li {
+margin: 20px;
+}
+.team-intro img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+}
+.call-to-action {
+background-color: #C9ADA7;
+padding: 20px;
+text-align: center;
+}
+.call-to-action button {
+background-color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 18px;
+cursor: pointer;
+}
+.nav-links {
+list-style: none;
+display: flex;
+justify-content: center;
+padding: 20px;
+}
+.nav-links li {
+margin: 0 20px;
+}
+.nav-links a {
+color: #333;
+text-decoration: none;
+}
+.nav-links a:hover {
+color: #C9ADA7;
+}
+
+/*quote*/
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carousel-item {
+  display: none;
+  text-align: center;
+}
+
+.carousel-item p{
+  text-align: center;
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.profile-card {
+  background-color: #151515;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  text-align: left;
+}
+
+.profile-card h3 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffc451;
+}
+
+.profile-card h3 span {
+  display: block;
+  font-size: 14px;
+  color: #fff;
+}
+
+.profile-card p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.carousel-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
